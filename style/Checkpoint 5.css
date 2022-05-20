@@ -1,0 +1,127 @@
+body{
+    /* background-image: url(burger-plat-ardoise-fond_23-2148238480.jpg); */
+    padding: 3%;
+    background: center / contain no-repeat  url(bg.jpg); 
+}
+#logo{
+    height: 70px;
+    width: 70px;
+}
+#main{
+    text-align: center;
+}
+h1{
+    color: #FFF;
+    background-color: #22577A;
+}
+.produit{
+    padding: 8%;
+    
+}
+#noir{
+    background-color: #22577A;
+    border: solid 2px #FFF;
+}
+.card-title{
+    color: #FFF;
+}
+.card-text{
+    color: #FFF;
+}
+.card-body p{
+    color: #FFF;
+}
+/*Cet element permet de gerer le style des boutons + -*/
+.fmEddu {
+    display: flex;
+    background-color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    justify-content: space-between;
+    width: 104px;
+    height: 36px;
+
+}
+
+.fmEddu input {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    color: #22577A;
+}
+
+.fmEddu button {
+    padding: 0 10px;
+    background-color: #57CC99;
+    font-size: 16px;
+    color: #22577A;
+}
+
+.fmEddu button:hover {
+    background-color: #80ED99;
+}
+
+.card-body .icons i {
+    margin: 0 15px;
+}
+
+.card-body .icons {
+    margin-bottom: 30px;
+}
+
+i:hover{
+    color: #80ED99;
+}
+/*couleur du botton de suppression*/
+.far{
+    color: #57CC99;
+}
+/*couleur du coeur*/
+.fas{
+    color:#80ED99;
+}
+
+#fixetotal{
+    position: -webkit-sticky!important;
+    position: sticky!important;
+    top: 20px;
+    left:100%;
+    background-color:#FFF;
+    font-size: large;
+    color: #22577A;
+    border:solid #7a2222 5px ;
+    padding: 5px;
+    font-weight: bolder;
+}
+.delete:hover{
+    color: #80ED99;
+}
+.card{
+    background-color: #22577A!important;
+    border: solid 2px #FFF!important;
+
+}
+#panier{
+    position: -webkit-sticky!important; /*fixe le panier*/
+    position: sticky!important;
+    top: 20px;
+    right:100%;
+    background-color:#22577A;
+    font-size: large;
+    color: #FFF;
+    border:solid #FFF 2px ;
+    padding: 2px;
+}
+
+button{
+    border: none;
+    background-color: #000;
+    color: #FFF;
+}
+
+.card-body .bottom-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
