@@ -1,7 +1,7 @@
 body{
     /* background-image: url(burger-plat-ardoise-fond_23-2148238480.jpg); */
     padding: 3%;
-    background: center / contain no-repeat  url(bg.jpg); 
+    background: center / contain no-repeat  url("../images/bg.jpg"); 
 }
 #logo{
     height: 70px;
