@@ -15,7 +15,7 @@ h1{
     background-color: #22577A;
 }
 .produit{
-    padding: 8%;
+    padding: 1%;
     
 }
 #noir{
@@ -103,8 +103,8 @@ i:hover{
 
 }
 #panier{
-    position: -webkit-sticky!important; /*fixe le panier*/
-    position: sticky!important;
+    position: -webkit-sticky; /*fixe le panier*/
+    position: sticky;
     top: 20px;
     right:100%;
     background-color:#22577A;
@@ -112,6 +112,11 @@ i:hover{
     color: #FFF;
     border:solid #FFF 2px ;
     padding: 2px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
 }
 
 button{
