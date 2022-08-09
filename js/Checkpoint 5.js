@@ -1,6 +1,6 @@
 var unit0 = 0;
 var total0=document.getElementById("majtotal");//1. la var total me permet de stocker ce qui est dans la balise qui a comme id majtotal
-var tota0=parseInt(total0.innerText); //2. parsint de "convertir" le texte recu en entier. 
+var tota0=parseInt(total0.innerText); //2. parsint permet de "convertir" le texte recu en entier. 
 var sommetotal=document.getElementById("totall");// idem que 1
 var somtot=parseInt(sommetotal.innerText);// idem que 2
 

@@ -1,23 +1,49 @@
 body{
-    /* background-image: url(burger-plat-ardoise-fond_23-2148238480.jpg); */
     padding: 3%;
     background: center / contain no-repeat  url("../images/bg.jpg"); 
 }
-#logo{
-    height: 70px;
-    width: 70px;
+
+#panier{
+    position: sticky;
+    top: 5%;
+    right:100%;
+    background-color:#22577A;
+    font-size: large;
+    color: #FFF;
+    border:solid #FFF 2px ;
+    padding: 2px;
 }
-#main{
+
+#fixetotal{
+    position: sticky!important;
+    top: 20px;
+    left:100%;
+    background-color:#FFF;
+    font-size: large;
+    color: #22577A;
+    border:solid #7a2222 5px ;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+main{
     text-align: center;
 }
+
 h1{
     color: #FFF;
     background-color: #22577A;
 }
 .produit{
-    padding: 1%;
-    
+    padding: 1%;    
 }
+
+.minitotal{
+    float: left;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+
 #noir{
     background-color: #22577A;
     border: solid 2px #FFF;
@@ -31,6 +57,12 @@ h1{
 .card-body p{
     color: #FFF;
 }
+
+.col-md-4{
+    display: flex;
+    justify-content: center;
+}
+
 /*Cet element permet de gerer le style des boutons + -*/
 .fmEddu {
     display: flex;
@@ -38,8 +70,9 @@ h1{
     font-size: 15px;
     font-weight: 700;
     justify-content: space-between;
-    width: 104px;
+    width: 100px;
     height: 36px;
+    align-items: center;
 
 }
 
@@ -73,6 +106,7 @@ h1{
 i:hover{
     color: #80ED99;
 }
+
 /*couleur du botton de suppression*/
 .far{
     color: #57CC99;
@@ -82,18 +116,6 @@ i:hover{
     color:#80ED99;
 }
 
-#fixetotal{
-    position: -webkit-sticky!important;
-    position: sticky!important;
-    top: 20px;
-    left:100%;
-    background-color:#FFF;
-    font-size: large;
-    color: #22577A;
-    border:solid #7a2222 5px ;
-    padding: 5px;
-    font-weight: bolder;
-}
 .delete:hover{
     color: #80ED99;
 }
@@ -101,17 +123,6 @@ i:hover{
     background-color: #22577A!important;
     border: solid 2px #FFF!important;
 
-}
-#panier{
-    position: -webkit-sticky; /*fixe le panier*/
-    position: sticky;
-    top: 20px;
-    right:100%;
-    background-color:#22577A;
-    font-size: large;
-    color: #FFF;
-    border:solid #FFF 2px ;
-    padding: 2px;
 }
 
 .row{

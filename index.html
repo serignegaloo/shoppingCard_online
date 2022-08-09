@@ -11,51 +11,29 @@
 </head>
 <body>
     <header>
-<!--         <nav class="navbar navbar-light" >
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/images/mcdonald-s-logo-4k-wallpaper-preview.jpg" alt="Logo de la boite" id="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ou nous trouver</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Qui sommes nous</a>
-                        </li>
-                        <li class="nav-item">
-                              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">A propos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
- -->    </header> 
-    <main id="main">
         <h1> <marquee> Bienvenue dans votre panier, ici vous avez tous les produits ajoutes</marquee></h1>
+    </header>
         <span id="panier">Mon panier</span>
         <span id="fixetotal">TOTAL:
             <span class="totalL" id="totall">0</span>F
-        </span>
+        </span> 
+    <main>
         <div class="produit">
             <div class="row">
                 <div class="col-md-4" id="parent0">
                     <div class="card" style="width: 18rem;" id="sup0">
                         <img src="/images/image6.jpg" class="card-img-top" alt="image du kinder">
                         <div class="card-body">
-                            <h5 class="card-title">KinderChoco</h5>
+                            <h5 class="card-title">Kinder Délice</h5>
                             <p class="card-text"><span style="font-size: x-large;">1500</span> FCFA</p>
                             <div class="icons">
                                 <i type="button" id="btn" onClick="Toggle() " class="far fa-heart"></i>
                                 <i onClick="supprime0()" type="button" id="del" class="far fa-trash-alt delete"></i>
                             </div>
                             <div class="bottom-side">
-                                <div style="float: left; font-size: large;color: white;">Total: <span id="majtotal">0</span>F</div>
+                                <div class="minitotal">
+                                    Total: <span id="majtotal">0</span>F
+                                </div>
                                 <div style="float: right;" class="fmEddu">
                                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                                     <div class="fmEddu">
@@ -79,8 +57,10 @@
                                 <i type="button" id="btn1" onClick="Toggle1()" class="far fa-heart"></i>
                                 <i onClick=supprime1() type="button" id="del1" class="far fa-trash-alt delete" ></i>                            
                             </div>
-                            <div>
-                                <div style="float: left; font-size: large;color: white;">Total: <span id="majtotal1">0</span>F</div>
+                            <div class="bottom-side">
+                                <div class="minitotal">
+                                    Total: <span id="majtotal1">0</span>F
+                                </div>
                                 <div style="float: right;" class="fmEddu" >
                                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                                     <div class="fmEddu">
@@ -88,8 +68,8 @@
                                             <input type="button" id="1" value=0 class=field1>
                                         <button type="button" id="add1" class=add1 onclick="increment1()">+</button>
                                     </div>
-                                </div>      
-                            </div>
+                                </div>  
+                            </div>     
                         </div>
                     </div>
                 </div>
@@ -97,14 +77,16 @@
                     <div class="card" style="width: 18rem;"id="sup2">
                         <img src="/images/image1.jpg" class="card-img-top" alt="image bueger">
                         <div class="card-body">
-                            <h5 class="card-title">OREO </h5>
-                            <p class="card-text"><span style="font-size: x-large;">3000</span>f</p>
+                            <h5 class="card-title">OREO</h5>
+                            <p class="card-text"><span style="font-size: x-large;">3000</span> FCFA</p>
                             <div class="icons">
                                 <i type="button" id="btn2" onClick="Toggle2()" class="far fa-heart"></i>
                                 <i onClick=supprime2() type="button" id="del2" class="far fa-trash-alt delete" ></i>                            
                             </div>
-                            <div>
-                                <div style="float: left; font-size: large;color: white;">Total: <span id="majtotal2">0</span>F</div>
+                            <div class="bottom-side">
+                                <div class="minitotal">
+                                    Total: <span id="majtotal2">0</span>F
+                                </div>
                                 <div style="float: right;" class="fmEddu" >
                                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                                     <div class="fmEddu">
@@ -118,14 +100,93 @@
                     </div>
                 </div>
             </div>
-            
-        
+            <br>
+            <div class="row">
+                <div class="col-md-4" id="parent0">
+                    <div class="card" style="width: 18rem;" id="sup0">
+                        <img src="/images/Kinder_bueno.jpg" class="card-img-top" alt="image du kinder">
+                        <div class="card-body">
+                            <h5 class="card-title">Kinder</h5>
+                            <p class="card-text"><span style="font-size: x-large;">1500</span> FCFA</p>
+                            <div class="icons">
+                                <i type="button" id="btn" onClick="Toggle() " class="far fa-heart"></i>
+                                <i onClick="supprime0()" type="button" id="del" class="far fa-trash-alt delete"></i>
+                            </div>|
+                            <div class="bottom-side">
+                                <div class="minitotal">
+                                    Total: <span id="majtotal">0</span>F
+                                </div>
+                                <div style="float: right;" class="fmEddu">
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                                    <div class="fmEddu">
+                                        <button type="button" id="sub" class=sub onclick="decrement0()">-</button>
+                                            <input type="button" id="0" value=0 class="field">
+                                        <button type="button" id="add" class=add onclick="increment0()">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                <div class="col-md-4" id="parent1">
+                    <div class="card" style="width: 18rem;"id="sup1">
+                        <img src="/images/lays_rouge.jpg" class="card-img-top" alt="image friandises">
+                        <div class="card-body">
+                            <h5 class="card-title">Lays</h5>
+                            <p class="card-text"><span style="font-size: x-large;">2500</span> FCFA</p>
+                            <div class="icons">
+                                <i type="button" id="btn1" onClick="Toggle1()" class="far fa-heart"></i>
+                                <i onClick=supprime1() type="button" id="del1" class="far fa-trash-alt delete" ></i>                            
+                            </div>
+                            <div class="bottom-side">
+                                <div class="minitotal">
+                                    Total: <span id="majtotal1">0</span>F
+                                </div>
+                                <div style="float: right;" class="fmEddu" >
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                                    <div class="fmEddu">
+                                        <button type="button" id="sub1" class=sub1 onclick="decrement1()">-</button>
+                                            <input type="button" id="1" value=0 class=field1>
+                                        <button type="button" id="add1" class=add1 onclick="increment1()">+</button>
+                                    </div>
+                                </div>  
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="parent2">
+                    <div class="card" style="width: 18rem;"id="sup2">
+                        <img src="/images/Magnum_double.jpg" class="card-img-top" alt="image bueger">
+                        <div class="card-body">
+                            <h5 class="card-title">MAGNUM</h5>
+                            <p class="card-text"><span style="font-size: x-large;">3000</span> FCFA</p>
+                            <div class="icons">
+                                <i type="button" id="btn2" onClick="Toggle2()" class="far fa-heart"></i>
+                                <i onClick=supprime2() type="button" id="del2" class="far fa-trash-alt delete" ></i>                            
+                            </div>
+                            <div class="bottom-side">
+                                <div class="minitotal">
+                                    Total: <span id="majtotal2">0</span>F
+                                </div>
+                                <div style="float: right;" class="fmEddu" >
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                                    <div class="fmEddu">
+                                        <button type="button" id="sub2" class=sub2 onclick="decrement2()">-</button>
+                                            <input type="button" id="2" value=0 class=field2>
+                                        <button type="button" id="add2" class=add2 onclick="increment2()">+</button>
+                                    </div>
+                                </div>                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
     </main>
     <footer>
         
     </footer>
     
-   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/Checkpoint 5.js"></script>
